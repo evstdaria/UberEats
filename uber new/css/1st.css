@@ -1,0 +1,311 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    overflow-x: hidden;
+}
+*, *::after, *::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* //header start// */
+.header {
+    background-color:#FFFFFF;
+    width: 100%;
+    height: 72px;
+    box-shadow: 0px 0px 16px rgba(38, 38, 38, 0.16);
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+}
+.header__container {
+    max-width: 964px;
+    margin: 0 auto;
+    padding: 0 16px 0px 16px;
+}
+.header__row {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.sidebar {
+    display: flex;
+    align-items: center;
+}
+.sidebar__button {
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    border: 1px solid #E0E0E0;
+    background-color: #FFFFFF;
+    border-radius: 2px;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 14px 20px;
+}
+.sidebar__basket-img {
+    margin-left: 27px;
+}
+@media screen and (max-width: 769px) {
+    .sidebar__basket-img {
+     display: none;
+    }
+    .header__row {
+        padding-top: 13px;
+    }
+
+}
+
+/* //header END// */
+
+/* //search-box// */
+main {
+    max-width: 962px;
+    margin: 0 auto;
+}
+.search-box__container{
+    padding: 0 16px 0px 16px;
+}
+.search-box__form {
+    margin-top: 72px;
+    color: #626262;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+    padding-top: 56px;
+    padding-bottom: 56px;
+}
+.search-box__text {
+    width: 100%;
+    border: none;
+	border-bottom: 1px solid #757575;
+	outline: none;
+}
+/* //search-box END// */
+
+/* //restaurants// */
+.restaurants__container {
+    padding: 0px 16px 80px 16px;
+}
+.restaurants__title {
+    color: #1d1d1d;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 34px;
+    padding-bottom: 32px;
+}
+.rest-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 16px;
+    justify-content: center;
+}
+.rest-card__image-wrapper {
+    max-width: 308px;
+}
+.rest-card__img {
+    width: 100%;
+    object-fit: cover;
+}
+.rest-card__info-block {
+    text-decoration: none;
+}
+.rest-card__name {
+    color: #1d1d1d;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    padding-bottom: 4px;
+    padding-top: 16px;
+}
+.rest-card__price {
+    color: #626262;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    padding-bottom: 4px;
+}
+.rest-card__time {
+    color: #1d1d1d;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 21px;
+    padding-bottom: 20px;
+}
+@media screen and (max-width: 975px) {
+    .rest-card {
+        display: grid;
+        grid-template-columns: 466px 466px;
+}
+.rest-card__image-wrapper {
+    max-width: 466px;
+}
+}
+@media screen and (max-width: 576px) {
+    .rest-card {
+        display: grid;
+        grid-template-columns: 490px;
+}
+    .rest-card__image-wrapper {
+        max-width: 490px;
+}
+}
+/* //restaurants END// */
+/* //footer// */
+hr {
+    background: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.4;
+    height: 1px;
+}
+.footer {
+    background-color:#262626;
+    max-width: 100%;
+}
+.footer__container {
+    margin: 0 auto;
+    max-width: 956px;
+    padding: 0px 16px 0px 16px;
+}
+.footer__logo {
+    padding-top: 56px;
+    padding-bottom: 40px;
+}
+.footer-info__container {
+    padding-top: 32px;
+    padding-bottom: 25px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.botton-language {
+    width: 227px;
+    height: 40px;
+}
+.botton-language__logo {
+    position: absolute;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    padding-left: 24px;
+    padding-right: 17px;
+}
+.botton-language__select {
+    margin-bottom: 33px;
+    padding-left: 50px;
+    background: #3B3B3B;
+    border:none;
+    color: #FFFFFF;
+    font-size: 13px;
+    width: 100%;
+    height: 100%;
+}
+.footer-info__col-first {
+    padding-right: 15px;
+}
+.footer-info__col-second {
+    padding-right: 15px;
+}
+.footer-info__name {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+}
+.footer-info__social-media{
+    padding-top: 33px;
+}
+.footer-info__linkmedia {
+    margin-top: 17px;
+}
+.footer-info__linkmedia-img {
+    padding-right: 7px;
+}
+.footer-info__text {
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+    padding-bottom: 23px;
+}
+.footer-info__link {
+    text-decoration: none;
+}
+.footer-app_container {
+    margin-top: 40px;
+    margin-bottom: 39px;
+}
+.footer-app_container {
+    display: flex;
+    justify-content: center;
+    column-gap: 40px;
+}
+.footer-app__store {
+    text-decoration: none;
+}
+
+.footer-agreements__container {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.footer-agreements_flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.footer-agreements__text {
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 13px;
+    color: #FFFFFF;
+}
+.footer-agreements__link {
+    text-decoration: none;
+}
+@media screen and (max-width: 565px) {
+    .footer-info__container {
+        grid-template-columns: 1fr;
+    }
+    .footer-info__linkmedia {
+        padding-bottom: 39px;
+    }
+    .footer-agreements_flex {
+        display: flex;
+        flex-direction: column;
+    }
+    .footer-agreements__text {
+        padding-bottom: 24px;
+    }
+}
+/* //footer END// */
+.back-to-top {
+    position: fixed;
+    right: 16px;
+    bottom: 24px;
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    display: flex;
+}
+.back-to-top:hover,
+.back-to-top:focus {
+    filter: brightness(1.5);
+    outline: none;
+}
+@media screen and (max-width: 760px){
+    .back-to-top {
+        width: 64px;
+        height: 64px;
+    }
+    .back-to-top__img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+}
